@@ -9,6 +9,7 @@
   --header-border-color: #ececec;
   --portfolio-border-color: #eeeeee;
   --gradient: rgba(47, 48, 58, 0.4);
+  --examples-position-color: rgba(47, 48, 58, 0.8);
   --icon-color: #afb1b8;
 }
 
@@ -311,9 +312,40 @@ img {
   margin-right: 30px;
 }
 
-.examples-list > .subtitle:nth-child(3n) {
-  margin-right: 0;
+/* examples-posision */
+
+.examples-posision {
+  position: relative;
 }
+
+.examples-text {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+
+  width: 100%;
+
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: var(--header-bcg-color);
+  background-color: var(--examples-position-color);
+}
+
+/* .examples-posision::before {
+  content: ' ';
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  background-color: var(--examples-position-color);
+} */
 
 /*OURTEAM */
 
