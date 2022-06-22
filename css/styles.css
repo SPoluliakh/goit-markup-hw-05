@@ -61,7 +61,6 @@ img {
 .studio-current {
   position: absolute;
   bottom: -1px;
-  right: 0;
 
   width: 100%;
   height: 4px;
@@ -156,11 +155,6 @@ img {
 .icon-phone {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.hat-contact:hover,
-.hat-contact:focus {
-  color: var(--activ-color);
 }
 
 /* HIRO */
@@ -337,15 +331,6 @@ img {
   color: var(--header-bcg-color);
   background-color: var(--examples-position-color);
 }
-
-/* .examples-posision::before {
-  content: ' ';
-  position: absolute;
-  bottom: 0;
-  width: 370px;
-  height: 70px;
-  background-color: var(--examples-position-color);
-} */
 
 /*OURTEAM */
 
