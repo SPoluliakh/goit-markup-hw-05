@@ -62,7 +62,7 @@
       <!--Герой-->
       <section class="hiro">
         <h1 class="hiro-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hiro-button" type="button">Заказать услугу</button>
+        <button class="hiro-button" data-modal-open type="button">Заказать услугу</button>
       </section>
 
       <!--Секция преимуществ-->
@@ -399,5 +399,18 @@
         </div>
       </div>
     </footer>
+
+    <!-- modal -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg width="11" height="11">
+            <use href="./images/sprite.svg#icon-Vector"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
