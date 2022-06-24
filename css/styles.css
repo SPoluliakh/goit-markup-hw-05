@@ -607,7 +607,12 @@ img {
 
 .general-items li {
   background: var(--header-bcg-color);
-  border: 1px solid var(--portfolio-border-color);
+}
+
+.prewieu {
+  border-bottom: 1px solid var(--portfolio-border-color);
+  border-left: 1px solid var(--portfolio-border-color);
+  border-right: 1px solid var(--portfolio-border-color);
 }
 
 /*portfolio/ flex */
