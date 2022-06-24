@@ -54,14 +54,16 @@ img {
 
 /* HEADER */
 
-.current-box {
+.current {
   position: relative;
 }
 
-.studio-current {
+.current::after {
   position: absolute;
+  display: block;
   bottom: -1px;
 
+  content: ' ';
   width: 100%;
   height: 4px;
 
@@ -528,6 +530,11 @@ img {
 
 /* PORTFOLIO */
 
+.general {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .general-btn {
   color: var(--titel-color);
   background-color: var(--team-bcg-color);
@@ -575,6 +582,13 @@ img {
 
 .general-link .prewieu {
   padding: 20px 24px;
+  border-bottom: 1px solid var(--portfolio-border-color);
+  border-left: 1px solid var(--portfolio-border-color);
+  border-right: 1px solid var(--portfolio-border-color);
+}
+
+.general-items li {
+  background: var(--header-bcg-color);
 }
 
 .general-title {
@@ -598,23 +612,6 @@ img {
   margin-bottom: 0;
 }
 
-/*portfolio/ container */
-
-.general {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.general-items li {
-  background: var(--header-bcg-color);
-}
-
-.prewieu {
-  border-bottom: 1px solid var(--portfolio-border-color);
-  border-left: 1px solid var(--portfolio-border-color);
-  border-right: 1px solid var(--portfolio-border-color);
-}
-
 /*portfolio/ flex */
 .general-list {
   display: flex;
@@ -636,4 +633,33 @@ img {
   flex-basis: calc(100% / 3 - 30px);
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+/* hidden-container */
+
+.hidden-info {
+  position: absolute;
+  top: 100%;
+
+  margin: 0;
+  padding: 63px 24px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+
+  background: rgba(33, 150, 243, 0.9);
+  color: var(--header-bcg-color);
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.general-cards:hover .hidden-info,
+.general-cards:focus .hidden-info {
+  transform: translateY(-100%);
+}
+
+.hidden-container {
+  position: relative;
+  overflow: hidden;
 }
