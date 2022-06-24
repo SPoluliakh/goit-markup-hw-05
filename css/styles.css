@@ -107,9 +107,13 @@ img {
   border-radius: 50%;
 }
 
+.modal-btn > svg {
+  fill: currentColor;
+}
+
 .modal-btn:hover,
 .modal-btn:focus {
-  border-color: var(--activ-color);
+  color: var(--activ-color);
 }
 
 /* HEADER */
